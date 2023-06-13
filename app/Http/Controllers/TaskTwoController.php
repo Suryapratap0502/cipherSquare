@@ -52,6 +52,7 @@ class TaskTwoController extends Controller
                 }
 
                 $response = TaskTwoModel::where('id', $values)->update($data);
+                
             }
             if ($response) {
                 return response()->json(['code' => 200, 'message' => 'Data Updated']);
